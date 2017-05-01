@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Flatabulous-numix-new
+Comment=A flat theme based on Flatabulos-master.
+Encoding=UTF-8
+
+
+[X-GNOME-Metatheme]
+GtkTheme=Flatabulous-numix-new
+MetacityTheme=Flatabulous-numix-new
+ButtonLayout=:minimize,maximize,close

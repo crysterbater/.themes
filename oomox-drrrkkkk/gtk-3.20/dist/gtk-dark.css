@@ -1,0 +1,109 @@
+/*
+Error: Invalid CSS after "...ant == "dark", ": expected function argument, was "#%FG%, #%BG%);"
+        on line 6 of gtk-3.20/scss/_global.scss
+        from line 2 of gtk-3.20/scss/_widgets.scss
+        from line 3 of gtk-3.20/scss/gtk-dark.scss
+
+1: // scss-lint:disable ColorVariable
+2: 
+3: @import "functions";
+4: 
+5: // default color scheme
+6: $bg_color: if($variant == "dark", #%FG%, #%BG%);
+7: $fg_color: if($variant == "dark", #%BG%, #%FG%);
+8: $base_color: if($variant == "dark", #%TXT_FG%, #%TXT_BG%);
+9: $text_color: if($variant == "dark", #%TXT_BG%, #%TXT_FG%);
+10: $button_bg_color: if($variant == "dark", #%BTN_FG%, #%BTN_BG%);
+11: $button_fg_color: if($variant == "dark", #%BTN_BG%, #%BTN_FG%);
+
+Backtrace:
+gtk-3.20/scss/_global.scss:6
+gtk-3.20/scss/_widgets.scss:2
+gtk-3.20/scss/gtk-dark.scss:3
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:704:in `assert_expr'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:613:in `block in arglist'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:587:in `loop'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:587:in `arglist'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:572:in `fn_arglist'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:534:in `funcall'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:514:in `ident'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:309:in `unary_not'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:309:in `unary_div'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:309:in `unary_minus'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:309:in `unary_plus'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `times_div_or_mod'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `plus_or_minus'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `relational'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `eq_or_neq'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `and_expr'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:286:in `or_expr'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:488:in `space'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:434:in `interpolation'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:359:in `expr'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:702:in `assert_expr'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/script/parser.rb:75:in `parse'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1051:in `sass_script'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:621:in `variable'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `map'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/usr/lib/ruby/gems/2.4.0/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
+/usr/bin/scss:22:in `load'
+/usr/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ant == \"dark\", \": expected function argument, was \"#%FG%, #%BG%);\"\A         on line 6 of gtk-3.20/scss/_global.scss\A         from line 2 of gtk-3.20/scss/_widgets.scss\A         from line 3 of gtk-3.20/scss/gtk-dark.scss\A \A 1: // scss-lint:disable ColorVariable\A 2: \A 3: @import \"functions\";\A 4: \A 5: // default color scheme\A 6: $bg_color: if($variant == \"dark\", #%FG%, #%BG%);\A 7: $fg_color: if($variant == \"dark\", #%BG%, #%FG%);\A 8: $base_color: if($variant == \"dark\", #%TXT_FG%, #%TXT_BG%);\A 9: $text_color: if($variant == \"dark\", #%TXT_BG%, #%TXT_FG%);\A 10: $button_bg_color: if($variant == \"dark\", #%BTN_FG%, #%BTN_BG%);\A 11: $button_fg_color: if($variant == \"dark\", #%BTN_BG%, #%BTN_FG%);"; }

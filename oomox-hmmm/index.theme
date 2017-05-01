@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=genericAF
+Comment=I often drink alone.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=genericAF
+GtkTheme=genericAF
+IconTheme=genericAF
+MetacityTheme=genericAF
